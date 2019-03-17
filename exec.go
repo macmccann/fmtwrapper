@@ -1,7 +1,7 @@
 package fmtwrapper
 
 import (
-	"os/exec",
+	"os/exec"
 	"bytes"
 )
 
