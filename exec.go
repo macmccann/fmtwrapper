@@ -1,6 +1,9 @@
 package fmtwrapper
 
-import "os"
+import (
+	"os/exec",
+	"bytes"
+)
 
 func Exec(name string, arg ...string) string {
 	cmd := exec.Command(name, arg)
