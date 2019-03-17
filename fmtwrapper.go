@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func printwrapped(text string) {
+func Printwrapped(text string) {
 	fmt.Println(text)
 }
 
