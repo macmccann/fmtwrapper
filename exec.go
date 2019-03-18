@@ -11,7 +11,7 @@ func Exec(name string, arg string) string {
 	cmd.Stdout = &out
 	err := cmd.Run()
 	if err != nil {
-		return err
+		return err.String()
 	}
 	return out.String()
 }
