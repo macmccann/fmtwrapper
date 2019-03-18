@@ -5,8 +5,8 @@ import (
 	"bytes"
 )
 
-func Exec(name string, arg string) string {
-	cmd := exec.Command(name, arg)
+func Exec(name string) string {
+	cmd := exec.Command(name)
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	err := cmd.Run()
